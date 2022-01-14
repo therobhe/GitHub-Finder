@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+    <!-- Bootstrap -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- input section -->
+    <div id="inputArea">
+        <h1>GitHub Profile Finder</h1>
+        <p>Start to type a profile you are looking for...</p>
+        <input type="text" placeholder="Enter a GitHub username..." onkeyup="retGitHubProfile(this.value)"><span id="inputRequired"> * no username to search for</span>
+    </div>
+    <!-- answer section, filled by JSON response -->
+    <div id="outputArea"></div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/ajax.js"></script>
+</body>
+</html>
