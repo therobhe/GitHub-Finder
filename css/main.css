@@ -1,3 +1,15 @@
 #inputRequired{
     color: #b9004b;
 }
+
+.avatar{
+    width: 100%;
+}
+
+.navbar{
+    border: none;
+}
+
+.list-group-item{
+    border: 2px solid #ddd;
+}

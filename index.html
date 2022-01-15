@@ -5,23 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Profile Finder</title>
+    <!-- Bootswatch - custom bootstrap -> coredesign -->
+    <link href="https://www.bootswatch.com/5/simplex/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap -->
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- input section -->
-    <div id="inputArea">
-        <h1>GitHub Profile Finder</h1>
-        <p>Start to type a profile you are looking for...</p>
-        <input type="text" placeholder="Enter a GitHub username..." onkeyup="retGitHubProfile(this.value)"><span id="inputRequired"> * no username to search for</span>
-    </div>
-    <!-- answer section, filled by JSON response -->
-    <div id="outputArea"></div>
+    <!-- site content -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">GitHub Finder</a>
+        </div>
+    </nav>
+    <br>
 
+    <!-- main content-->
+    <main role="main" class="container">
+        <!-- input section -->
+        <div id="inputArea">
+            <h1>GitHub Profile Finder</h1>
+            <p>Enter a username you are looking for to fetch profile details and recent repos.</p>
+            <input id="searchUser" type="text" class="form-control" placeholder="Enter a GitHub username..." onkeyup="retGitHubProfile(this.value)">
+        </div>
+        <br>
+        <!-- answer section, filled by JSON response -->
+        <div id="outputArea"></div>
+    </main>
+
+    <!-- Script includes -->
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <!-- Custom JS -->
     <script src="/js/ajax.js"></script>
 </body>
